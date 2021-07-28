@@ -1,0 +1,41 @@
+<div class="main-overview">
+  <div class="grid">
+    <div class="col-2 timeline-status">
+      <h4>Status:</h4>
+    </div>
+
+    <div class="col-8 timeline">
+      <p-timeline [value]="events" layout="horizontal">
+        <ng-template pTemplate="content" let-event>
+          {{event.status}}
+        </ng-template>
+      </p-timeline>
+    </div>
+  </div>
+
+  <div class="grid mt-6">
+    <div class="col-2">
+      <app-company-name></app-company-name>
+    </div>
+
+    <div class="col-10">
+      <app-company-form></app-company-form>
+    </div>
+  </div>
+
+  <div class="grid mt-6">
+    <div class="col-12">
+      <p-tabView>
+        <p-tabPanel header="Questionários">
+          <app-questionnaires></app-questionnaires>
+        </p-tabPanel>
+        <p-tabPanel header="Respondentes">
+          Content 2
+        </p-tabPanel>
+        <p-tabPanel header="Questões">
+          Content 3
+        </p-tabPanel>
+      </p-tabView>
+    </div>
+  </div>
+</div>

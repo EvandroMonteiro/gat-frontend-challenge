@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  color: #ebebeb;
+
+  .security-type {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 200px;
+    height: 100%;
+
+    .security {
+      padding: 5px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      .material-icons {
+        margin-right: 5px;
+      }
+    }
+
+    .my-security {
+      border: 2px solid #d8d8d8;
+      border-radius: 0px 0px 24px 24px;
+      box-shadow: 0px 11px 6px #00000029;
+    }
+
+    .thirth-security {
+      background: #c36100 0% 0% no-repeat padding-box;
+      box-shadow: 8px 9px 14px #00000029;
+      border-radius: 0px 0px 24px 24px;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+    li {
+      margin-right: 12px;
+    }
+  }
+}

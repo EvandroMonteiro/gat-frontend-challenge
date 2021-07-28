@@ -1,0 +1,46 @@
+.grid-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  grid-template-rows: 58px 1fr 50px;
+  grid-template-areas:
+    "logo header"
+    "sidenav main"
+    "sidenav footer";
+}
+
+.logo {
+  grid-area: logo;
+  // background-color: red;
+}
+
+.header {
+  grid-area: header;
+  // background-color: #648ca6;
+  // opacity: 1;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  // background-color: #394263;
+  // opacity: 1;
+}
+
+.main {
+  grid-area: main;
+  background: #22222273 0% 0% no-repeat padding-box;
+  border-radius: 40px 0px 0px 0px;
+  opacity: 1;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  // background: #28272e;
+  border-top-left-radius: 40px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #648ca6;
+}

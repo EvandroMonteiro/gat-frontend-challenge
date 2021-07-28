@@ -1,0 +1,19 @@
+<p-card class="text-center">
+  <div class="circular-progress">
+    <div class="chart">
+      <circle-progress [percent]="75" [radius]="63" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
+        [outerStrokeColor]="'#ED8322'" [innerStrokeColor]="'#6F6F6FB9'" [animation]="true" [animationDuration]="300"
+        [maxPercent]="100">
+      </circle-progress>
+    </div>
+
+    <div class="info">
+      <p>Média do Score de Terceiros</p>
+      <span>Atualização 22/12/2020</span>
+    </div>
+  </div>
+
+  <div class="line-smooth">
+    <div echarts [options]="options" class="echart"></div>
+  </div>
+</p-card>

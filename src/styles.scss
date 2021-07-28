@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+
+:root {
+  --color-primary: ##ebebeb;
+  --color-secondary: #7c828a;
+  --color-activity: #c36118;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  background: #000000f7 linear-gradient(345deg, #0d83e800 0%, #e6730814 100%) 0% 0% no-repeat padding-box;
+  color: #d8d8d8;
+}
+
+input,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lexend", sans-serif;
+}
+
+.main-overview {
+  margin: 10px 25px;
+}
+
+.p-card {
+  background: #28272e99;
+  box-shadow: 8px 9px 14px #00000029;
+  border-radius: 12px;
+  color: #d8d8d8;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+
+  .p-card-header {
+    padding: 15px 15px 0 15px;
+  }
+
+  .p-card-content {
+    padding: 0;
+  }
+}
